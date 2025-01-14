@@ -1,59 +1,64 @@
 <!DOCTYPE html>
-<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Simplifié</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
 </head>
-<body>
 
-    
-    <header class="naviguer">
-        <nav>
-            <a href="index.html" class="btn btn-warning">Home</a>
-            <a href="index.html" class="btn btn-warning">Projet</a>
-            <a href="index.html" class="btn btn-warning">Contact</a>
-        </nav>
+<body>
+    <header class="container-fluid bg-light py-3">
+        <div class="d-flex align-items-center justify-content-between">
+
+            <div class="profile">
+                <i class="bi bi-image-fill fs-1"></i>
+                <h2>LAKHMAISS CHAIMA</h2>
+                <div class="ms-3">
+                    <a href="https://facebook.com/YourPage" class="me-2 text-dark" target="_blank">
+                        <i class="bi bi-facebook fs-3"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/Chaimaa Lakhmaiss" class="me-2 text-dark" target="_blank">
+                        <i class="bi bi-linkedin fs-3"></i>
+                    </a>
+                    <a href="https://github.com/LAKHMAISS-CHAIMA" class="text-dark" target="_blank">
+                        <i class="bi bi-github fs-3"></i>
+                    </a>
+                </div>
+                
+            </div>
+
+            <nav>
+                <a href="#Home" class="btn btn-warning">Home</a>
+                <a href="#Project" class="btn btn-warning">Projet</a>
+                <a href="#contact" class="btn btn-warning">Contact</a>
+            </nav>
+            
+
+
     </header>
 
-  
-<main>
-        
-    <section class="profile">
-        <div class="profile-card">
-            <i class="bi bi-image-fill"></i>
-            <h2>LAKHMAISS CHAIMA</h2>
-            <div class="Acceuil">
-                <i class="bi bi-facebook"></i>
-                <i class="bi bi-linkedin mx-3"></i>
-                <i class="bi bi-github"></i>
-            </div>
-            <div class="info">
-                <p><i class="bi bi-phone"></i> 06 97 40 62 73</p>
-                <p><i class="bi bi-envelope"></i> chaimaalakhmaiss23@gmail.com</p>
-                <p><i class="bi bi-geo-alt"></i> Beni Mellal, Maroc</p>
-            </div>
-        </div>
 
-        <div class="about-me">
-            <h2>À propos</h2>
-            <p>Bonjour et bienvenue !   Passionnée par la technologie et le design, je suis développeur full stack avec un attrait
+    <section class="container my-5">
+        <h2 class="text-center mb-4">À propos</h2>
+        <div class="p-4 bg-light rounded">
+            <p>Bonjour et bienvenue ! Passionnée par la technologie et le design, je suis développeur full stack avec un
+                attrait
                 particulier pour les interfaces intuitives et esthétiques. Curieuse de nature, j’aime apprendre
                 de nouvelles technologies comme JavaScript et ses frameworks, tout en cultivant mon sens du
                 détail grâce à ma formation initiale en chimie industrielle. Cette double compétence me permet
                 d’allier rigueur scientifique et créativité dans mes projets</p>
         </div>
     </section>
-</main>
 
-    
-    <section class="container my-5">
+
+    <section id="projets" class="container my-5">
         <h2 class="text-center mb-4">Projets</h2>
-        
-            <div class="cards">
+        <div class="row g-4">
+            <div class="col-md-6">
                 <div class="card">
                     <img src="images/2cf0zrkr.png" class="card-img-top" alt="Portfolio">
                     <div class="card-body">
@@ -61,6 +66,8 @@
                         <p class="card-text">HTML, CSS, Bootstrap et jQuery</p>
                     </div>
                 </div>
+            </div>
+            <div class="col-md-6">
                 <div class="card">
                     <img src="images/blog.jpg" class="card-img-top" alt="Image du Blog">
                     <div class="card-body">
@@ -68,6 +75,8 @@
                         <p class="card-text">HTML et CSS</p>
                     </div>
                 </div>
+            </div>
+            <div class="col-md-6">
                 <div class="card">
                     <img src="images/calculatrice..webp" class="card-img-top" alt="Image de la Calculatrice">
                     <div class="card-body">
@@ -75,38 +84,49 @@
                         <p class="card-text">JavaScript</p>
                     </div>
                 </div>
+            </div>
+            <div class="col-md-6">
                 <div class="card">
-                    <img src="images/gestion de sock.jpg"class="card-img-top" alt="Image de Gestion de stock">
+                    <img src="images/gestion de sock.jpg" class="card-img-top" alt="Image de Gestion de stock">
                     <div class="card-body">
                         <h5 class="card-title">Gestion de stock</h5>
                         <p class="card-text">JavaScript</p>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
-   
-    <section class="section">
-        <h2 class="contact">Contact</h2>
-        <div class="row ">
+
+    <section id="contact" class="container my-5">
+        <h2 class="text-center mb-4">Contact</h2>
+        <div class="row">
             <div class="col-md-6">
-                <p><strong>Phone:</strong> 06 97 40 62 73</p>
-                <p><strong>Email:</strong> chaimaalakhmaiss@gmail.com</p>
+                <div class="p-4 bg-light rounded">
+                    <p><strong>Téléphone :</strong> 06 97 40 62 73</p>
+                    <p><strong>Email :</strong>chaimaalakhmaiss23@gmail.com</p>
+                </div>
             </div>
-            <div class="message">Je suis disponible et à l’écoute de toute nouvelle opportunité. N’hésitez pas à me contacter en
-                remplissant votre nom, votre adresse e-mail et votre message ci-dessous.</div>
             <div class="col-md-6">
-                <form class="input-section">
-                    <input type="text" class="form-control" placeholder="Nom">
-                    <input type="email" class="form-control" placeholder="Email">
-                    <textarea class="form-control" rows="4" placeholder="Message"></textarea>
-                    <button type="submit" class="btn btn-primary" id="submitBtn">Envoyer</button>
+                <form>
+                    <div class="mb-3">
+                        <label for="nom" class="form-label">Nom</label>
+                        <input type="text" class="form-control" id="nom" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
                 </form>
             </div>
         </div>
     </section>
 
-   
     <footer>
         <p>&copy; 2025 Mon Portfolio</p>
     </footer>
@@ -114,4 +134,5 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
